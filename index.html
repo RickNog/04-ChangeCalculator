@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="utf-8">
+        <title>Change Calculator</title>
+		
+        <script src="jquery-1.12.4.min.js"></script>
+        
+        
+
+
+<!-- Latest compiled and minified CSS as of 6/2016 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript as of 6/2016-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+	<body>
+		<form>
+			<div class="container">
+				<h1>Change Calculator</h1>
+				<!-- Creates input boxes for sales and cash. -->
+				<div class="form-group col-sm-3">
+					<h3>How much is due for the sale?</h3>
+			  		<input type="text" id="salePrice" placeholder="$">
+			  	</div>
+			
+				<div class="form-group col-sm-3">
+					<h3>How much has the customer given you?</h3>
+			  		<input type="text" id="cash" placeholder="$">
+			  	</div>
+			</div>
+			<div class="container">
+        		<button type="button" class="button">Calculate Change</button>
+			</div>
+			<div class="container">
+				<!-- Displays currency names -->
+				<div class="form-group col-sm-3">
+					<h3>Dollars</h3>
+					<p id="dollarChange"> </p>	
+			  	</div>
+
+			  	<div class="form-group col-sm-3">
+					<h3>Quarters</h3>
+					<p id="quarterChange"> </p>
+			  	</div>
+
+			  	<div class="form-group col-sm-3">
+					<h3>Dimes</h3>
+					<p id="dimeChange"> </p>
+			  	</div>
+
+			  	<div class="form-group col-sm-3">
+					<h3>Nickels</h3>
+					<p id="nickelChange"> </p>
+			  	</div>
+
+			  	<div class="form-group col-sm-3">
+					<h3>Pennies</h3>
+					<p id="pennyChange"> </p>
+			  	</div>
+			</div>	
+
+		</form>
+        <script src="index.js"></script>
+    </body>
+</html>
